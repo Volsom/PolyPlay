@@ -1,0 +1,46 @@
+<!DOCTYPE html> 
+<html> 
+  <head> 
+    <meta charset="UTF-8"> 
+    <link rel="stylesheet" href= "/static/css/style.css">
+    {% block head %}
+        <title>Главная страница</title>
+    {% endblock %}
+  </head> 
+  <body> 
+    <header>
+        <ul>
+          <img src = "/static/images/logo.png" width="400" height="52">
+          <li><a href="/">Главная страница</a></li>
+          <li><a href="/products">Ассортимент</a></li>
+          <li><a href="/cart">Корзина</a></li>
+          <li><a href="/contacts">Служба поддержки</a></li>
+        </ul>
+    </header>
+    {% block content %}
+        <div class="main"style="height: 650px;">
+            <div class='card'>
+                <a href="/product1">
+                    <img src="/static/images/tovar1.jfif" width="370" height="295">
+                    <p class = "prom">Распродажа!</p>
+                </a>
+            </div>            
+            
+            <div class='card'>
+                <a href="/product2">
+                    <img src="/static/images/tovar2.jpg" width="390" height="295">
+                    <p class = "prom">Самое популярное<p>
+                </a>
+            </div>
+            
+            <div class='card'>
+                <a href="/product3">
+                    <img src="/static/images/tovar3.jfif" width="390" height="295">
+                    <p class = "prom">Новинка!<p>
+                </a>
+            </div>
+            
+         
+    {% endblock %}
+  </body> 
+</html> 
